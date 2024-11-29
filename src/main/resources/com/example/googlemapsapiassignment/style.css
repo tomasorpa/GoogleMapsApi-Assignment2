@@ -1,43 +1,54 @@
-VBox {
-    -fx-alignment: center;
-    -fx-spacing: 20px;
-    -fx-background-color: #f4f4f4;
-    -fx-padding: 20px;
+/* Fuente para el cuerpo y títulos */
+* {
+    -fx-font-family: "System-UI";
 }
 
-TextField {
-    -fx-pref-width: 300px;
-    -fx-pref-height: 40px;
-    -fx-font-size: 14px;
+/* Estilos del título principal */
+Label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
     -fx-padding: 10px;
-    -fx-background-color: white;
-    -fx-border-color: #ccc;
-    -fx-border-radius: 5px;
-    -fx-focus-color: #0078d4;
 }
 
+/* Flexbox container para los TextField */
+VBox {
+    -fx-display: flex;
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
+
+/* Estilo del botón */
 Button {
-    -fx-background-color: #0078d4;
+    -fx-background-color: #3498DB;
     -fx-text-fill: white;
-    -fx-font-size: 16px;
-    -fx-pref-width: 200px;
-    -fx-pref-height: 50px;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
     -fx-border-radius: 5px;
     -fx-cursor: hand;
-    -fx-font-weight: bold;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 120, 212, 0.6), 10, 0, 2, 2);
-}
-
-TextArea {
-    -fx-pref-width: 400px;
-    -fx-pref-height: 200px;
-    -fx-background-color: #fff;
-    -fx-border-color: #ccc;
-    -fx-border-radius: 5px;
-    -fx-padding: 10px;
-    -fx-font-size: 14px;
 }
 
 Button:hover {
-    -fx-background-color: #005a99;
+    -fx-background-color: #2980B9;
+}
+
+/* Estilos del título de resultados */
+#resultTitle {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-margin-top: 15px;
+}
+
+/* Estilo del TextArea de resultados */
+#resultTextArea {
+    -fx-padding: 15px;
+    -fx-background-color: #FAFAFA;
+    -fx-border-color: #BDC3C7;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 200px;
+    -fx-pref-width: 400px;
+    -fx-font-size: 14px;
+    -fx-line-spacing: 1.5;
+    -fx-wrap-text: true;
 }
